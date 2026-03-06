@@ -32,6 +32,7 @@ public class Supports {
         .noOcclusion()
         .isViewBlocking((a, b, c) -> false)
         .isSuffocating((a, b, c) -> false)
+        .isRedstoneConductor((a, b, c) -> true)
       )
       .addLayer(() -> RenderType::translucent)
       .item()
